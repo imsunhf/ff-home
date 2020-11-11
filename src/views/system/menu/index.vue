@@ -1,13 +1,13 @@
 <template>
   <div class="menu-wrap" ref="menuWrap">
     <el-row :gutter="20">
-      <el-col :span="5" v-for="item in projects" :key="item">
+      <el-col :span="5" :xs="12" v-for="item in projects" :key="item">
         <el-card shadow="hover" class="card">
           <img class="p-icon" :src="`${$baseUrl}image/menu/cli.png`" alt="" />
           <p>{{ item }}</p>
         </el-card>
       </el-col>
-      <el-col :span="5">
+      <el-col :span="5" :xs="12">
         <el-card shadow="hover" class="card">
           <img class="p-icon" src="@/assets/img/httpswww.qq.comfromd.png" alt="" />
           <p>联系我</p>
