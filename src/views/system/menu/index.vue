@@ -7,6 +7,12 @@
           <p>{{ item }}</p>
         </el-card>
       </el-col>
+      <el-col :span="5">
+        <el-card shadow="hover" class="card">
+          <img class="p-icon" src="@/assets/img/httpswww.qq.comfromd.png" alt="" />
+          <p>联系我</p>
+        </el-card>
+      </el-col>
     </el-row>
   </div>
 </template>
@@ -22,7 +28,7 @@ const config = {
 export default {
   data () {
     return {
-      projects: ['ff-cli', 'ff-music']
+      projects: ['ff-cli', 'ff-music', 'ff-大屏']
     }
   },
   mounted () {
